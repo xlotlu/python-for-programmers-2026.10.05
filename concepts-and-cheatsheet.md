@@ -87,7 +87,9 @@ mai puțin importante, dar să nu vă ia prin surprindere:
 
 # Essential debugging tools
 
+print()
 help()
+type()
 
 
 # datatype-uri
@@ -125,7 +127,9 @@ IndentationError
 
 IndexError: când operăm (pe o listă, alte sequences, și alte obiecte cu index access)
             și indexul respectiv nu există
+KeyError:   când nu există cheia respectivă
 
+AttributeError: nu este definit atributul accesat pe acest obiect
 
 # Very useful packages
 
@@ -141,3 +145,12 @@ părerea lui Ionuț: criteriile pt. cod bun, în ordine:
 - readability (whitespace, nume de variabile și funcții)
 - eleganță (non-dens, non-complicat, în timp ce poate să fie complex)
 - performanță
+
+
+There are 2 most difficult things in computing:
+- naming things
+- cache invalidation
+- off-by-one errors
+
+
+There are 10 types of people, those that understand binary and those that don't.
