@@ -26,6 +26,17 @@ Python nu este pentru performanță,
 în Python totul este o referință!
 
 
+în Python orice operator rulează de fapt
+un "dunder method" specific.
+
+exemplu:
+  == __eq__
+  >  __gt__
+  <  __lt__
+  +  __add__
+  -  __sub__
+
+
 ## Alte concepte:
 
 reprezentare = felul în care arată un obiect când este inspectat
@@ -137,7 +148,7 @@ AttributeError: nu este definit atributul accesat pe acest obiect
 
 ipython
 ipdb
-
+rich
 
 # Random things:
 
@@ -152,5 +163,6 @@ There are 2 most difficult things in computing:
 - cache invalidation
 - off-by-one errors
 
-
 There are 10 types of people, those that understand binary and those that don't.
+
+https://xkcd.com/231/
