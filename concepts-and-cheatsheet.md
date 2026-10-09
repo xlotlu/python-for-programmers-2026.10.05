@@ -29,6 +29,9 @@ Python nu este pentru performanță,
 în Python orice operator rulează de fapt
 un "dunder method" specific.
 
+Python este "self-documenting":
+scriem un string ca prim element în modul / clasă / funcție
+
 exemplu:
   == __eq__
   >  __gt__
@@ -149,6 +152,7 @@ AttributeError: nu este definit atributul accesat pe acest obiect
 ipython
 ipdb
 rich
+requests
 
 # Random things:
 

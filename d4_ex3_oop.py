@@ -245,3 +245,23 @@ class ThreeDPoint(Point):
     def translate(self, dx, dy, dz):
         super().translate(dx, dy)
         self.z += dz
+
+# "modificăm" class Point să îi facem un static method
+# (în mod normal am modifica codul de mai sus,
+# dar vrem să vedem doar "diff-ul")
+class Point(Point):
+    @staticmethod
+    def get_distance(p1, p2):
+        return math.sqrt(
+            (p2.x - p1.x) ** 2 +
+            (p2.y - p1.y) ** 2
+        )
+
+    def __sub__(self, other):
+        distance = self.get_distance(other, self)
+        angle = 42 # chosen by true trigonometry
+        return Vector(distance, angle)
+
+    @property
+    def distance_from_origin(self):
+        return self.get_distance(self, Point(0, 0))
